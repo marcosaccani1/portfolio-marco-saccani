@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Marco</title>
+  <meta name="description" content="Contatta Marco tramite il form del sito portfolio.">
+
+  <meta property="og:title" content="Contatti | Marco">
+  <meta property="og:description" content="Scrivi a Marco tramite il form di contatto del sito.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuonome.github.io/portfolio-marco/contatti.html">
+  <meta property="og:image" content="images/og-image.jpg">
+
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Marco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Apri menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header text-center">
+    <div class="container">
+      <h1 class="fw-bold">Contattami</h1>
+      <p>Compila il form per inviarmi un messaggio.</p>
+    </div>
+  </header>
+
+  <main class="section-padding">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-info card-custom h-100">
+              <h2>Parliamo del tuo progetto</h2>
+              <p>
+                Se vuoi contattarmi per collaborazioni, opportunità o semplicemente per conoscere meglio
+                il mio profilo, puoi usare il form qui accanto.
+              </p>
+
+              <ul class="contact-list">
+                <li><strong>GitHub:</strong> <a href="https://github.com/marcosaccani1" target="_blank">marcosaccani1</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marco-saccani-0a08a533a/" target="_blank">Profilo LinkedIn</a></li>
+                <li><strong>Disponibilità:</strong> junior role, collaborazioni</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form-box">
+              <form action="#" method="post">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="oggetto" class="form-label">Oggetto</label>
+                  <input type="text" id="oggetto" name="oggetto" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="messaggio" class="form-label">Messaggio</label>
+                  <textarea id="messaggio" name="messaggio" rows="6" class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">Invia messaggio</button>
+              </form>
+
+              <p class="form-note mt-3">
+                Nota: questo form è statico in HTML/CSS. Se vuoi, in un secondo momento puoi collegarlo
+                a un servizio esterno come EmailJS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-2">© 2026 Marco - Portfolio personale</p>
+      <div class="social-links">
+        <a href="https://github.com/tuousername" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
